@@ -1,0 +1,4 @@
+#wpadminbar #wp-admin-bar-custom-theme .ab-icon:before {
+    content: '\f484'; /* Change to a Dashicon of your choice*/
+    top: 3px;
+}

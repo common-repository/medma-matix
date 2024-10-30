@@ -1,0 +1,162 @@
+
+.medma-hidden{
+  display: none !important;
+}
+#medma-notification{
+display: block;
+position: fixed;
+bottom: 50px;
+min-height: 50px;
+background: rgba(0,0,0,0);
+color: #efefef;
+z-index: 2222;
+left: 0px;
+width: 450px;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+margin-left: -150px;
+}
+.medma-toast{
+  font-size: 12px;
+  padding: 5px;
+  bottom: 0px;
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+  font-family: sans-serif;  
+  transition: width 0.5s ease;
+  text-align: left;
+}
+.medma-toast>a{
+  color: #E91E63;
+}
+.move-up{
+  display: block;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.turn-off-notification{
+  bottom: 0px;
+  position: absolute;
+  display: block;
+  background: #111;
+  padding: 5px;
+  font-size: 10px;
+}
+/*-----   custom css --- */
+.checkboxes-and-radios {
+    margin: 0px;
+    min-width: 10px;
+    padding: 5px;
+    background: rgba(0,0,0,0.85);
+    min-height: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 4px -2px #000;
+    transition: all 0.5s ease;
+   
+}
+.checkboxes-and-radios input {
+display: none;
+}
+.checkboxes-and-radios label {
+cursor: pointer;
+padding-right: 35px;
+position: relative;
+display: inline-block;
+font-size: 10px;
+padding: 15px 0;
+float: left;
+padding: 0px;
+
+margin-right: 25px;
+}
+.checkboxes-and-radios input[type="checkbox"],
+.checkboxes-and-radios input[type="radio"] {
+position: absolute;
+visibility: hidden !important;
+}
+/*.checkboxes-and-radios input[type="checkbox"] + label:before,
+.checkboxes-and-radios input[type="radio"] + label:before,
+.checkboxes-and-radios input[type="checkbox"] + label:after,
+.checkboxes-and-radios input[type="radio"] + label:after {
+content: '';
+position: absolute;
+top: 50%;
+margin-top: -7.5px;
+box-sizing: border-box;
+}
+.checkboxes-and-radios input[type="checkbox"] + label:before,
+.checkboxes-and-radios input[type="radio"] + label:before {
+width: 20px;
+height: 10px;
+right: 0px;
+background: #fff;
+border: 1px solid #e4e3e1;
+border-radius: 15px;
+}*/
+.checkboxes-and-radios input[type="checkbox"] + label:after,
+.checkboxes-and-radios input[type="radio"] + label:after {
+width: 10px;
+height: 10px;
+right: 15px;
+background: #BDBDBD;
+border-radius: 50%;
+-webkit-transition: all 200ms ease-out;
+transition: all 200ms ease-out;
+}
+.checkboxes-and-radios input[type="checkbox"]:checked + label:after,
+.checkboxes-and-radios input[type="radio"]:checked + label:after {
+right: 0px;
+background: #FF9800;
+}
+.notifik{
+margin-right: 30px;
+vertical-align: super;
+}
+.close-note{
+  font-size: 12px;
+  float: right;
+  cursor:pointer;
+  margin-top: -4px;
+}
+.close-note:hover{
+  color: #e00;
+
+}
+.slide-note{
+  margin-left: -150px;
+}
+
+
+@media only screen and (max-width: 500px) {
+   #medma-notification{
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: -100px;
+   }
+   .close-note{
+    margin-right: 10px;
+    font-size: 16px;
+   }
+   .checkboxes-and-radios{
+    width: 100%;
+    padding: 15px 5px;
+    border-radius: 0px;
+   }
+   .checkboxes-and-radios label{
+    font-size: 16px;
+   }
+   .medma-toast{
+    font-size: 18px;
+    margin-bottom: 100px;
+   }
+}
+
+
+
+
+
